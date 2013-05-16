@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="GBK" standalone="no"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+    <description><![CDATA["Task Flow Tag"]]></description>
+    <display-name>"Task Flow Tag"</display-name>
+    <tlib-version>1.0</tlib-version>
+    <short-name>tf</short-name>
+    <uri>/taskflow-tags</uri>
+    <tag>
+        <description><![CDATA[根据代码表转换代码为名称]]></description>
+        <name>codeConvertToName</name>
+        <tag-class>org.blue.taskflow.rest.struts2.tag.CodeConvertToNameTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <description><![CDATA[代码表名]]></description>
+            <name>codeTableName</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description><![CDATA[代码]]></description>
+            <name>code</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description><![CDATA[The theme (other than default) to use for rendering the element]]></description>
+            <name>theme</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+        </attribute>
+        <dynamic-attributes>false</dynamic-attributes>
+    </tag>
+
+    <tag>
+        <description><![CDATA[获取代码表并设置到ValueStack中]]></description>
+        <name>codeTableList</name>
+        <tag-class>org.blue.taskflow.rest.struts2.tag.CodeTableListTag</tag-class>
+        <body-content>JSP</body-content>
+
+        <attribute>
+            <description><![CDATA[代码表名]]></description>
+            <name>codeTableName</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <dynamic-attributes>false</dynamic-attributes>
+    </tag>
+
+    <tag>
+        <description><![CDATA[获取职员列表并设置到ValueStack中]]></description>
+        <name>employeeList</name>
+        <tag-class>org.blue.taskflow.rest.struts2.tag.EmployeeListTag</tag-class>
+        <body-content>JSP</body-content>
+
+        <attribute>
+            <description><![CDATA[不包含的职员ID]]></description>
+            <name>excludeEmployeeId</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <dynamic-attributes>false</dynamic-attributes>
+    </tag>
+
+    <tag>
+        <description><![CDATA[获取机构列表并设置到ValueStack中]]></description>
+        <name>organizationList</name>
+        <tag-class>org.blue.taskflow.rest.struts2.tag.OrganizationListTag</tag-class>
+        <body-content>JSP</body-content>
+
+        <attribute>
+            <description><![CDATA[不包含的机构ID]]></description>
+            <name>excludeOrganizationId</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <dynamic-attributes>false</dynamic-attributes>
+    </tag>
+
+    <tag>
+        <description><![CDATA[任务操作按钮]]></description>
+        <name>taskOperateButton</name>
+        <tag-class>org.blue.taskflow.rest.struts2.tag.TaskOperateButtonTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <description><![CDATA[任务状态]]></description>
+            <name>state</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description><![CDATA[任务创建人ID]]></description>
+            <name>createEmployeeId</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description><![CDATA[任务所属人ID]]></description>
+            <name>belongEmployeeId</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description><![CDATA[当前操作人ID]]></description>
+            <name>currentEmployeeId</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description><![CDATA[The theme (other than default) to use for rendering the element]]></description>
+            <name>theme</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+        </attribute>
+        <dynamic-attributes>false</dynamic-attributes>
+    </tag>
+</taglib>

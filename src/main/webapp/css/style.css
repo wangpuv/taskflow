@@ -1,0 +1,153 @@
+/* global */
+a {
+    color: #4d87ce;
+}
+
+th, td {
+    border-color: #999;
+}
+
+table.noborder th, table.noborder td {
+    border: none;
+}
+
+.error, .success {
+    padding: .5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border: 2px solid #ddd;
+}
+
+.error {
+    background: #FBE3E4;
+    color: #8a1f11;
+    border-color: #FBC2C4;
+}
+
+.success {
+    background: #E6EFC2;
+    color: #264409;
+    border-color: #C6D880;
+}
+
+.error a {
+    color: #8a1f11;
+}
+
+.success a {
+    color: #264409;
+}
+
+/* form */
+input[type=text], input[type=password], textarea, select {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    padding: 2px;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus {
+    border-color: #666;
+}
+
+.inputForm input[type=text], .inputForm input[type=password], .inputForm textarea, .inputForm select {
+    width: 100%;
+}
+
+/* header */
+#hd {
+    border-bottom: 2px solid #658A16;
+}
+
+#hd h1 {
+    font-size: 153.9%;
+    letter-spacing: .1em;
+    margin: 0.375em 0;
+    color: #658A16;
+}
+
+#hd h2 {
+    letter-spacing: .1em;
+    margin: 0.375em 0;
+    color: #BACE87;
+}
+
+#menu ul {
+    margin: 0 0 0 0;
+    padding: 0.5em;
+    font-weight: bold;
+    background: transparent url("../images/arrowgreen.gif") 100% 0;
+    border-top: 2px solid #658A16;
+    text-align: right;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu ul a {
+    padding: 0.5em;
+    text-decoration: none;
+    color: #658A16;
+}
+
+#menu a:hover {
+    color: #fff;
+    background: #658A16;
+}
+
+/* leftbar */
+#leftbar {
+    padding: 2em 0 2em;    
+}
+
+/* body */
+.title h2 {
+    letter-spacing: .1em;
+    margin: 0.5em 0;
+}
+
+/* footer */
+#ft {
+    margin-top: 15px;
+    padding: 15px 0 0 0;
+    font-size: 95%;
+    text-align: center;
+    border-top: 2px solid #658A16;
+}
+
+#ft a {
+    color: #999;
+}
+
+/* container */
+#container {
+    width: 800px;
+    margin: 30px auto;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+#container th, #container td {
+    white-space:nowrap;
+}
+
+.grid {
+    margin: 30px auto 0 auto;
+}
+
+.button {
+    text-align: center;
+}
+
+.css_right {
+    float: right;
+}
+
+.css_left {
+    float: left;
+}
+
+.treeView ul li {
+    list-style: none;
+}

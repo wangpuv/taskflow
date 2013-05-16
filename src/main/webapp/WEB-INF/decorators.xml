@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GBK"?>
+<decorators defaultdir="/WEB-INF/decorators">
+	<!-- 在excludes元素下指定的页面将不会由SiteMesh来装饰 -->
+    <excludes>
+    </excludes>
+
+    <!-- 指定装饰器，该装饰器用于装饰pattern指定的url的所有页面 -->
+    <decorator name="layout" page="layout.jsp">
+        <pattern>/organization/*.action</pattern>
+        <pattern>/account/*.action</pattern>
+        <pattern>/task/*.action</pattern>
+        <pattern>/report/*.action</pattern>
+    </decorator>
+</decorators>

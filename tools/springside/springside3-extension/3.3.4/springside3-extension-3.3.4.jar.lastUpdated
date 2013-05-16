@@ -1,0 +1,10 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri Dec 17 08:20:42 CST 2010
+http\://download.java.net/maven/2/.lastUpdated=1292545242625
+http\://repo1.maven.org/maven2/.error=
+http\://springside.googlecode.com/svn/repository/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.error=Could not transfer artifact org.springside\:springside3-extension\:jar\:3.3.4 from/to jboss (http\://repository.jboss.org/nexus/content/groups/public-jboss/)\: Error transferring file\: Connection timed out\: connect
+default-http\://repository.jboss.org/nexus/content/groups/public-jboss/.lastUpdated=1292545242078
+http\://repo1.maven.org/maven2/.lastUpdated=1292545194437
+http\://springside.googlecode.com/svn/repository/.lastUpdated=1292545203859
+http\://download.java.net/maven/2/.error=

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="GBK"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.blue</groupId>
+	<artifactId>h2-starts</artifactId>
+	<name>H2 start Script</name>
+	<packaging>pom</packaging>
+    <version>0.1</version>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.2.143</version>
+			<scope>runtime</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>org.h2.tools.Server</mainClass>
+					<arguments>
+						<argument>-tcp</argument>
+						<argument>-web</argument>
+					</arguments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

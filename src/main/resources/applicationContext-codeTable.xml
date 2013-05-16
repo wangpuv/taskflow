@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <description>代码表</description>
+
+    <!--系统缓存适配器-->
+    <bean id="cacheAdapter" class="org.blue.taskflow.rest.cache.adapt.CacheAdapterMapImpl"/>
+
+    <!--机构类型-->
+    <bean id="organizationTypeCodeTable" class="org.blue.taskflow.rest.codetable.StoreCodeTableTemplate">
+        <property name="tableName" value="CODE_ORGANIZATION_TYPE"/>
+    </bean>
+    <!--机构级别-->
+    <bean id="organizationGradeCodeTable" class="org.blue.taskflow.rest.codetable.StoreCodeTableTemplate">
+        <property name="tableName" value="CODE_ORGANIZATION_GRADE"/>
+    </bean>
+    <!--身份证件类型-->
+    <bean id="certificateTypeCodeTable" class="org.blue.taskflow.rest.codetable.StoreCodeTableTemplate">
+        <property name="tableName" value="CODE_CERTIFICATE_TYPE"/>
+    </bean>
+</beans>
