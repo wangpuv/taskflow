@@ -17,22 +17,22 @@
     </licenses>
 
     <organization>
-        <name>blue</name>
-        <url>http://taskflow.github.com</url>
+        <name>wangpuv</name>
+        <url>http://wangpuv.github.io</url>
     </organization>
 
     <developers>
         <developer>
             <id>wangpuv@gmail.com</id>
-            <name>blue</name>
+            <name>wangpuv(blue)</name>
             <email>wangpuv@gmail.com</email>
-            <url>http://wangpuv.github.com</url>
+            <url>http://wangpuv.github.io</url>
             <roles>
                 <role>Lead</role>
                 <role>Initial Committer</role>
             </roles>
-            <organization>blue</organization>
-            <organizationUrl>http://taskflow.github.com</organizationUrl>
+            <organization>wangpuv</organization>
+            <organizationUrl>http://wangpuv.github.io</organizationUrl>
             <timezone>+8</timezone>
         </developer>
     </developers>
